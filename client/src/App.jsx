@@ -11,9 +11,9 @@ import "./App.css"; // Import your CSS file for additional styles
 import DownloadReport from "./Components/DownloadReport";
 import CreateInterview from "./Components/Interview/CreateInterview";
 import { Toaster } from "react-hot-toast";
-import CreateStudent from "./Components/Students/createStudent";
 import UpdateStudent from "./Components/Students/UpdateStudent";
 import UpdateInterview from "./Components/Interview/UpdateInterview";
+import CreateStudent from "./Components/Students/CreateStudent";
 
 const App = () => {
   return (
@@ -34,7 +34,7 @@ const App = () => {
           <Route path="/interview" element={<Interview />} />
           {/* Child routes under /interview */}
           <Route path="/create-interview" element={<CreateInterview />} />
-          <Route path="/update-interview/:id" element={<UpdateInterview/>} />
+          <Route path="/update-interview/:id" element={<UpdateInterview />} />
 
           <Route path="/update-student/:id" element={<UpdateStudent />} />
           <Route path="/create-student" element={<CreateStudent />} />
